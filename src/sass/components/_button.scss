@@ -1,0 +1,60 @@
+.nav__button {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  border-bottom: 3px solid $color-tealish;
+  transition: 0.3s ease-in;
+  padding: 0.1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-tealish;
+    transform: scale(1.2);
+    // color: $background-color;
+  }
+}
+
+.nav__button--scrolled {
+  border-bottom: 3px solid $color-tealish;
+  color: $color-tealish;
+  @include respond(tab-port) {
+    border-bottom: 3px solid $background-color;
+    color: $background-color;
+  }
+}
+
+.form__button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: none;
+  border-bottom: 3px solid $color-tealish;
+  color: $color-tealish;
+  transition: 0.3s ease-in;
+  width: 20rem;
+  font-family: $primary-font;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:hover {
+    border-bottom: 3px solid $color-tealish;
+    background-color: $color-tealish;
+    color: $background-color;
+    transform: translateY(-6px);
+  }
+
+  &:active {
+    transform: translateY(6px);
+  }
+}
+
+.eye__button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

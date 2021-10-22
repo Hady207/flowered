@@ -1,0 +1,29 @@
+// themes
+@import "./themes/cdns";
+@import "./themes/colors";
+
+// Base files
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/typography";
+
+// Utills files
+// @import "./utils/animations";
+// @import "./utils/waves";
+
+// Components
+@import "./components/loading";
+@import "./components/button";
+@import "./components/form";
+@import "./components/modal";
+// Layout
+@import "./layout/main";
+@import "./layout/navbar";
+@import "./layout/section";
+@import "./layout/footer";
+@import "./layout/copywrites";
+
+// Pages
+// @import './pages/homepage';
+// @import './pages/terms';
+// @import './pages/contactus';
