@@ -8,12 +8,14 @@ import Routes from "../../routes";
 const RootPage = () => {
   const { userProfile } = useSelector(AuthSelectors);
   const dispatch = useDispatch();
+
   useEffect(() => {
     const user = window.localStorage.getItem("userProfile");
     if (user) {
       dispatch(LoginActions?.userSignIn(JSON.parse(user)));
     }
   }, [dispatch]);
+
   return (
     <>
       {userProfile && <Navbar />}

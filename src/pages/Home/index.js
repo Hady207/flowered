@@ -72,11 +72,11 @@ const Home = () => {
                 width="100"
               />
               <ColumnDirective
-                field="capital"
+                field="Capital"
                 headerText="capital"
                 width="100"
               />
-              <ColumnDirective field="action" headerText="action" width="100" />
+              <ColumnDirective field="action" headerText="Action" width="100" />
             </ColumnsDirective>
             <Inject services={[Page]} />
           </GridComponent>

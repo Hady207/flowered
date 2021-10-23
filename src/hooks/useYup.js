@@ -2,8 +2,8 @@ import * as yup from "yup";
 
 const UseYup = () => {
   const loginFormSchema = yup.object().shape({
-    username: yup.string().required({ text: "enter_mobile_number" }),
-    password: yup.string().required({ text: "enter_password" }),
+    username: yup.string().required("Please Enter Your Username"),
+    password: yup.string().required("Please Enter Your Password"),
   });
 
   return {

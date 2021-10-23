@@ -10,9 +10,10 @@ import Users from "../../json/profile.json";
 
 const Authentication = () => {
   let history = useHistory();
-  const initialState = { username: "", password: "", rememberMe: false };
   const dispatch = useDispatch();
   const { loginFormSchema } = useYup();
+
+  const initialState = { username: "", password: "", rememberMe: false };
 
   const handleSubmit = async (values) => {
     const user = Users.find(
@@ -31,7 +32,7 @@ const Authentication = () => {
 
   return (
     <section className="section__container">
-      <h1 className="section__title">Welcome please login</h1>
+      <h1 className="section__title">Welcome Please Login</h1>
       <Formik
         initialValues={initialState}
         validationSchema={loginFormSchema}

@@ -9,7 +9,6 @@ import Auth from "../pages/Authentication";
 function PrivateRoute({ children, ...rest }) {
   const user = JSON.parse(window.localStorage.getItem("userProfile"));
   const { userProfile } = useSelector(AuthSelectors);
-  console.log("protected route", userProfile);
   return (
     <Route
       {...rest}
